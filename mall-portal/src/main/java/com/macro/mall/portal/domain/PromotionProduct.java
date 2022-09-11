@@ -1,9 +1,6 @@
 package com.macro.mall.portal.domain;
 
-import com.macro.mall.model.PmsProduct;
-import com.macro.mall.model.PmsProductFullReduction;
-import com.macro.mall.model.PmsProductLadder;
-import com.macro.mall.model.PmsSkuStock;
+import com.macro.mall.model.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,4 +19,6 @@ public class PromotionProduct extends PmsProduct {
     private List<PmsProductLadder> productLadderList;
     //商品满减信息
     private List<PmsProductFullReduction> productFullReductionList;
+    //商品会员价信息
+    private List<PmsMemberPrice> productMemberPriceList;
 }
